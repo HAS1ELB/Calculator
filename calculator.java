@@ -111,10 +111,6 @@ public class Calculator extends JFrame implements ActionListener {
         this.setVisible(true);
     }
 
-    public static void main(String[] args) {
-        new Calculator();
-    }
-
     @Override
     public void actionPerformed(ActionEvent e) {
         for (int i = 0; i < 10; i++) {
@@ -227,6 +223,10 @@ public class Calculator extends JFrame implements ActionListener {
         if (e.getSource() == clearButton) {
             textField.setText("");
         }
+    }
+
+    public static void main(String[] args) {
+        new Calculator();
     }
 }
 
